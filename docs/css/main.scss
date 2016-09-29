@@ -37,17 +37,19 @@ $on-laptop:        800px;
 
 // Included Bootstrap (via gem)
 // enable & disable parts of Bootstrap in _bootstrap_custom.scss
-@import "bootstrap_custom";
+//@import "custom/bootstrap_custom";
+
+@import 'vendor/bootstrap-sass/assets/stylesheets/bootstrap';
 
 
 //// DevConf-specific CSS below ////
 
-@import 'testimonial';
-@import 'scrolling-nav';
-@import 'font-awesome.min';
+@import 'custom/testimonial';
+@import 'custom/scrolling-nav';
+@import 'custom/font-awesome.min';
 
 // Custom YouTube style
-@import 'yt-js';
+@import 'custom/yt-js';
 
 // DevConf style
-@import 'devconf';
+@import 'custom/devconf';
