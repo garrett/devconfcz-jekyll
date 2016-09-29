@@ -2,22 +2,365 @@
 layout: default
 ---
 
-<div class="home">
+<!-- Home Section -->
+<header id="intro" class="intro-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 intro-content">
+        <div class="time-and-place">
+          <address>Brno, Czech Republic</address>
+          <div class="date">
+            <time datetime="2017-01-27">January 27</time> - <time
+              datetime="2017-01-29">29</time>, 2017
+          </div>
+        </div>
 
-  <h1 class="page-heading">Posts</h1>
+        <h1 class="logo"><img id="devconf-logo" src="img/devconf-cz-webopt.svg" alt="DevConf.cz"></h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <div class="tagline">#DEFINEfuture</div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+        <div class="intro-text">
+          A free annual community conference for developers, admins, and users of Linux & JBoss
+        </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+        <div class="submit-talk">
+          <a class="typeform-share btn btn-purple" href="https://devconfcz.typeform.com/to/SB4LW3" data-mode="1" target="_blank">SUBMIT A TALK</a>
+        </div>
 
-</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+  <h2>About DevConf.cz</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p><i>DevConf.cz 2017 is the 9th annual, free and open 3-day open-source Fedora Linux and JBoss community conference for Red Hat and community developers, DevOps, testers, and documentation writers, organized to sync, share, and hack on upstream projects with the community in the beautiful city of Brno, Czech Republic.</i></p>
+      </div>
+      <div class="col-xs-12 col-s-6">
+        <p>You should consider attending DevConf.cz 2017 if you are:</p>
+        <ul>
+          <li>A developer</li>
+          <li>A technology architect</li>
+          <li>An IT consultant</li>
+          <li>An IT student or a teacher from an IT university/faculty</li>
+          <li>Or simply an IT enthusiast interested in the latest trends in open source and emerging digital technologies</li>
+        </ul>
+        <p>If you're curious about last year's event, you can check out <a href="https://devconfcz2016.sched.org/">DevConf.cz 2016 schedule</a> and videos on our <a href="https://www.youtube.com/channel/UCIHsqY_4eWeInVQnxZ7WSjg">DevConf.cz YouTube Channel</a>.</p>
+        <p>DevConf.cz is a free conference and there is no admission or ticket charge. This year we will require that you <b>register for free</b>. We will provide registration details soon.</p>
+        <p>Talks, presentations, and workshops will all be in <i>English</i>.</p>
+      </div>
+
+      <div class="col-xs-12 col-s-6">
+        <div data-id="_jW8lUyoFDw" class="youtube-player">
+          <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; display:flex; align-items: center; justify-content: center; flex-direction: column;">
+            <div style="height: 30px"></div>
+            <div class="play"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>
+            <div style="height: 30px; color:white;"><h3>DevConf 2016 Timelapse Video</h3></div>
+          </div>
+        </div>
+
+        <!-- <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/_jW8lUyoFDw" frameborder="0" allowfullscreen=""></iframe>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CfP Section -->
+<section id="cfp" class="cfp-section">
+  <h2>Call for Papers (CfP)</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3 class="first">Important Dates</h3>
+        <p><strong><b>CFP Due Date:</b></strong> November 11th 2016 @ 11:59PM <a href="https://www.timeanddate.com/worldclock/czech-republic/prague">CST</a></p>
+        <p><strong><b>Speakers Announced:</b></strong> December 2nd 2016 @ 11:59PM <a href="https://www.timeanddate.com/worldclock/czech-republic/prague">CST</a></p>
+        <p><strong><b>Final Schedule Posted:</b></strong> By January 6th @ 11:59PM <a href="https://www.timeanddate.com/worldclock/czech-republic/prague">CST</a></p>
+      </div>
+      <div class="col-xs-12">
+        DevConf.cz attracts a broad range of topics from <a href="https://www.youtube.com/watch?v=CLJLzE2lBqo"><i class="fa fa-youtube-play" aria-hidden="true"></i>What's up in Kernel Land</a>
+        to <a href="https://www.youtube.com/watch?v=pUQQ8PbSPFY"><i class="fa fa-youtube-play" aria-hidden="true"></i>Open Source Distributed Systems at Uber</a>.
+      </div>
+      <div class="col-xs-12">
+        You should consider submitting a talk if your topic touches on any of the following topics:
+      </div>
+      <div class="col-sm-4 col-xs-6">
+        <ul>
+          <li>Ansible</li>
+          <li>Auditing</li>
+          <li>Big Data</li>
+          <li>Community</li>
+          <li>Config Management</li>
+          <li>CentOS</li>
+          <li>Cloud</li>
+          <li>Containers</li>
+          <li>Debugging</li>
+          <li>Desktop</li>
+          <li>Development</li>
+          <li>DevOps</li>
+          <li>Distributed Systems</li>
+        </ul>
+      </div>
+      <div class="col-sm-4 col-xs-6">
+        <ul>
+          <li>Docker</li>
+          <li>Documentation</li>
+          <li>Fedora</li>
+          <li>Filesystems</li>
+          <li>IoT</li>
+          <li>JavaEE</li>
+          <li>JBoss</li>
+          <li>Kernel</li>
+          <li>Localization</li>
+          <li>Microservices</li>
+          <li>Middleware</li>
+          <li>Mobile</li>
+          <li>Networking</li>
+        </ul>
+      </div>
+      <div class="col-sm-4 col-xs-6">
+        <ul>
+          <li>OpenShift</li>
+          <li>OpenStack</li>
+          <li>OpenSource Development</li>
+          <li>Packaging</li>
+          <li>Research</li>
+          <li>Security</li>
+          <li>Storage</li>
+          <li>Testing / QA</li>
+          <li>Userspace</li>
+          <li>Virtualization</li>
+          <li><i>And more...</i></li>
+        </ul>
+      </div>
+      <div class="col-xs-12">
+        <a class="typeform-share btn btn-purple" href="https://devconfcz.typeform.com/to/SB4LW3" data-mode="1" target="_blank">SUBMIT A TALK</a>
+        <script>
+          (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
+        </script>
+      </div>
+      <div class="col-xs-12">
+        <h3>Session Submission Process</h3>
+        <ol>
+          <li>Propose and submit your presentation using the 'SUBMIT A TALK' button above by <b><i>November 11th, 2016 23:59 <a href="https://www.timeanddate.com/worldclock/czech-republic/prague">CST</a></i></b></li>
+          <li>All submissions will be reviewed by the DevConf.CZ program committee</li>
+          <li>You will receive an email from informing your that your talk was either ACCEPTED or REJECTED by <b><i>December 2nd, 2016</i></b>
+            <ul>
+              <li>Sorry! We expect we'll have hundreds of sessions submitted, we can't accept everyone's talks. May the best talks be accepted!</li>
+              <li>All tracks will have alternates selected, in case of last minute cancellations</li>
+            </ul>
+          </li>
+          <li>Before December 25, 2016 the <i>tentative</i> schedule will be ready. You will be asked to review for any problems or last minute updates</li>
+          <li>In the first week of January the <i>final</i> schedule will be posted publically</li>
+          <li>There may be additional emails sync asynchronously about scheduling and miscellaneous questions from participants.</li>
+          <li>A followup email will be posted after DevConf.CZ 2017 ends with information about posting presentation materials.</li>
+        </ol>
+      </div>
+
+      <!-- Participation Agreements Section -->
+      <div class="col-xs-12">
+        <h3>Participation Agreements</h3>
+        <ul>
+          <li><a class="btn-lg" href="speaker-agreement.html"><i class="fa fa-check-square-o text-warning" aria-hidden="true"></i> Speaker Agreement</a></li>
+          <li><a class="btn-lg" href="coc.html"><i class="fa fa-external-link text-warning" aria-hidden="true"></i> Code of Conduct</a></li>
+          <li><a class="btn-lg" href="media-policy.html"><i class="fa fa-film text-warning" aria-hidden="true"></i> Media Policy</a></li>
+        </ul>
+      </div>
+      <!-- END Participation Agreements Section -->
+
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="testimonials" class="testimonials-section">
+  <h2>Previously at DevConf.cz 2016...</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div id="testimonial-1" class="testimonial testimonial-default">
+          <div class="testimonial-section">
+            "It is a great conference to meet awesome people from around the world with very good presentations and workshops about free and open source software. ... very well organized and Brno is also a nice city."
+          </div>
+          <div class="testimonial-desc">
+            <img src="img/till_mass_profile_testimonial_100x100.png" alt="Till Mass DevConf.CZ 2016 Testimonial">
+            <div class="testimonial-writer">
+              <div class="testimonial-writer-name">
+                Till Mass
+              </div>
+              <div class="testimonial-writer-designation">
+                Penetration Tester, CryptSetup Developer
+              </div>
+              <a href="https://gitlab.com/cryptsetup/cryptsetup" class="testimonial-writer-company"><i class="fa fa-gitlab" aria-hidden="true"></i></a>
+              <a href="https://fedoraproject.org/wiki/User:Till" class="testimonial-writer-company"><i class="fa fa-linux" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/@TillMaas" class="testimonial-writer-company"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="https://blog.till.name/" class="testimonial-writer-company"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div id="testimonial-2" class="testimonial testimonial-default">
+          <div class="testimonial-section">
+            "It's like FOSDEM, just not as big, but better organized and very centered to Red Hat because they organizing it"
+          </div>
+          <div class="testimonial-desc">
+            <img src="img/alex_juncu_profile_testimonial_100x100.png" alt="Alex Juncu DevConf.CZ 2016 Testimonial">
+            <div class="testimonial-writer">
+              <div class="testimonial-writer-name">
+                Alex Juncu
+              </div>
+              <div class="testimonial-writer-designation">
+                Kernel Technical Support Engineer @ Red Hat
+              </div>
+              <a href="https://devconfcz2016.sched.org/speaker/alexj1"><i class="fa fa-slideshare" aria-hidden="true"></i></a>
+              <a href="http://alexandru.juncu.ro/blog"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+              <a href="https://plus.google.com/+alexandrujuncu"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              <a href="https://ro.linkedin.com/in/alexandrujuncu"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div id="testimonial-3" class="testimonial testimonial-default">
+          <div class="testimonial-section">
+            "Hands down the best FLOSS conference in the Czech Republic!"
+          </div>
+          <div class="testimonial-desc">
+            <img src="img/ondrej_skopek_profile_testimonial_100x100.png" alt="Ondrej Skopek DevConf.CZ 2016 Testimonial">
+            <div class="testimonial-writer">
+              <div class="testimonial-writer-name">
+                Ondrej Skopek
+              </div>
+              <div class="testimonial-writer-designation">
+                Intern at @microsoft, Student at MFF UK.
+              </div>
+              <a href="http://oskopek.com/"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/oskopek" class="testimonial-writer-company"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="https://github.com/oskopek"> <i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div id="testimonial-4" class="testimonial testimonial-default">
+          <div class="testimonial-section">
+            "Presentation of the hottest New Technologies as they are being made."
+          </div>
+          <div class="testimonial-desc">
+            <img src="img/jostein-toftebakk_profile_testimonial_100x100.png" alt="Jostein Toftebakk DevConf.CZ 2016 Testimonial">
+            <div class="testimonial-writer">
+              <div class="testimonial-writer-name">
+                Jostein Toftebakk
+              </div>
+              <div class="testimonial-writer-designation">
+                Linux System Administrator at <a href="https://www.brreg.no/">Brønnøysundregistrene</a>
+              </div>
+              <a href="https://www.venstre.no/person/jostein-toftebakk/" class="testimonial-writer-company"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/jostoftebakk" class="testimonial-writer-company"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VENUE -->
+<section id="venue" class="venue-section">
+  <h2>Venue (<a href='https://www.google.cz/maps/place/Faculty+of+Information+Technology+Brno+University+of+Technology,+Bo%C5%BEet%C4%9Bchova+1%2F2,+612+66+Brno-Kr%C3%A1lovo+Pole/@49.226851,16.5945971,17z/data=!3m1!4b1!4m5!3m4!1s0x471294099f6249fb:0x46a6dce891d1b33d!8m2!3d49.226851!4d16.5967858' target='_blank'><i class='fa fa-map-o' aria-hidden='true'></i></a>)</h2>
+  <div id="venue-map" style="width: 100%; height: 400px; z-index: 0"></div>
+</section>
+
+<!-- Leaflet JavaScript  MUST BE CALLED LAST-->
+<script src="js/leaflet.js"></script>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <h2>Get in touch</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h3>Need help?</h3>
+        <h4>Find us on Telegram or Email us:</h4>
+        <a href="https://telegram.me/joinchat/B1He_UEkuB4fBfY1cKCXRw"><img src="img/telegram_logo-128x-128y.png" alt="Join DevConf chat on Telegram"></a>
+        <a href="mailto:cward@redhat.com"><img src="img/mail_icon.png" alt="Email Chris Ward about DevConf"></a>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <h3>FAQ</h3>
+        <p>Answers to commonly asked questions will be added when questions are asked.</p>
+
+        <!--<ul>
+          <li>COMING SOON</li>
+        </ul> -->
+      </div>
+    </div>
+
+    <div class="row">
+      <form id="newsletter" method="post" action="https://tinyletter.com/devconf_cz">
+        <div class="col-xs-12">
+          <h3>Stay informed!</h3>
+          <p>Subscribe to our newsletter to receive all relevant event information.</p>
+        </div>
+        <div class="col-md-4 col-xs-6">
+          <div class="form-group">
+            <input name="email" type="email" class="form-control" id="email" placeholder="Enter your email address&hellip;" required>
+          </div>
+        </div>
+        <div class="col-md-2 col-xs-6">
+          <button type="submit" class="btn btn-success"
+            data-toggle="popover" data-trigger="hover" data-placement="top" title="Stay up to date with DevConf.cz"
+            data-content="We'll send you updates and announcements related to on-going and future DevConf.cz events.">
+            Subscribe&nbsp;&nbsp;<i class="fa fa-envelope" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-md-4 col-xs-12 xs-smaller">
+          <strong>No Spam! We promise!</strong><br>
+          This newsletter will only be used to share updates and announcements related to DevConf.cz.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Sponsors -->
+<section id="sponsors" class="sponsors-section">
+  <h2>Sponsors</h2>
+  <div class="container">
+    <h3>This event is brought to you by:</h3>
+    <div class="row">
+      <div class="col-lg-12">
+        <a href="https://www.redhat.com/en/global/czech-republic"><img alt="Red Hat, Czech" src="img/logo_redhat_rgb_default.png"></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h4>And supported by our friends at:</h4>
+      </div>
+      <div class="col-lg-4">
+        <a href="https://mojefedora.cz"><img alt="Moje Fedora CZ" src="img/cropped-mojefedora-250x-150y.png"></a>
+      </div>
+      <div class="col-lg-4 hidden-xs hidden-sm"></div>
+      <div class="col-lg-4">
+        <a href="http://www.fit.vutbr.cz/"><img alt="FIT VUT Brno Faculty of Information Technology" src="img/fit_vut_brno_logo-250x-150y.png"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="footer" class="footer-section">
+  <div class="container">
+    <!-- EMPTY -->
+  </div>
+</footer>
+
+<script>
+  (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
+</script>

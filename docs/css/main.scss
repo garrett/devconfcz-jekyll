@@ -4,19 +4,19 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-family: "Open Sans", sans-serif;
+$base-font-size:   18px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       #333;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #8786df;
 
-$grey-color:       #828282;
+$grey-color:       #888;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
@@ -35,7 +35,19 @@ $on-laptop:        800px;
 //     }
 // }
 
-// Import partials from the `minima` theme.
-// @import "minima";
+// Included Bootstrap (via gem)
+// enable & disable parts of Bootstrap in _bootstrap_custom.scss
+@import "bootstrap_custom";
 
-@import 'bootstrap';
+
+//// DevConf-specific CSS below ////
+
+@import 'testimonial';
+@import 'scrolling-nav';
+@import 'font-awesome.min';
+
+// Custom YouTube style
+@import 'yt-js';
+
+// DevConf style
+@import 'devconf';

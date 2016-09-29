@@ -24,7 +24,13 @@ twitter_username: devconf_cz
 
 # Build settings
 markdown: kramdown
-#theme: minima
+
+sass:
+  sass_dir: css
+
+bootstrap:
+  assets: true
 
 gems:
+  - jekyll-assets
   - jekyll-bootstrap-sass
