@@ -46,8 +46,6 @@ exclude:
   - README.md
   - bin
   - vendor
-  - assets/vendor/
-  - assets/custom/
 
 include:
   - _stylesheets
