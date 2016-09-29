@@ -53,6 +53,9 @@ include:
   - _stylesheets
   - _javascript
   - assets/site.js
+  - assets/vendor/jquery/dist/jquery.js
+  - assets/vendor/jquery.easing/js/jquery.easing.js
+  - assets/vendor/bootstrap-sass/assets/javascripts/bootstrap.js
 
 sass:
   sass_dir: assets/
